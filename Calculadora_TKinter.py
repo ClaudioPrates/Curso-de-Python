@@ -52,6 +52,7 @@ def again():
     por favor digite Y para YES ou N para NO.
 
     ''')
+    
     if calc_again.upper() == "Y":
         calcular()
     elif calc_again.upper() == "N":
@@ -59,5 +60,5 @@ def again():
     else:
         again()
 
-Welcome()
+Welcome() # Função que dá as boas vindas ao usuario
 calcular()
