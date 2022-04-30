@@ -60,5 +60,5 @@ def again():
     else:
         again()
 
-Welcome() # Função que dá as boas vindas ao usuario
+Welcome() # Função que dá as boas vindas ao usuario 
 calcular()
