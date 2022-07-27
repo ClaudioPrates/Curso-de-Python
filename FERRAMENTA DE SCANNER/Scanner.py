@@ -21,3 +21,17 @@ for thread in threads:
 print(clientes)
 
 
+2º modo:
+    
+    import os
+
+
+
+for k in range(1, 254):
+
+    ip = "192.168.0.7.{0}".format(k)
+response = os.popen(f"ping {ip} -c 1").read()
+if "Host Unreachable" in response:
+    print( ip, ": inativo")
+else:
+        print(ip, ": ativo")
